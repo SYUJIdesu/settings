@@ -1,0 +1,62 @@
+{
+    // VS Code全体の配色テーマを指定します
+    "workbench.colorTheme": "Default Dark Modern",
+    // ファイルアイコンのテーマを指定します (Material Icon Themeを使用)
+    "workbench.iconTheme": "material-icon-theme",
+    // タブがエディタ幅を超えた場合、折り返して表示するようにします
+    "workbench.editor.wrapTabs": true,
+    // 行末の余計なスペースを削除
+    "files.trimTrailingWhitespace": false,
+    // ファイルの末尾を改行で終わらせる
+    "files.insertFinalNewline": true,
+    // 差分エディタ（Diff）で変更がない領域を非表示（折りたたみ）にします
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    // ミニマップ（コード全体の概要図）を非表示にします
+    "editor.minimap.enabled": false,
+    // エディタのフォントファミリーを指定します ('Fira Code'を優先し、なければMenlo...)
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    // フォントリガチャ（合字、例: '!=' を '≠' と表示）を有効にします
+    "editor.fontLigatures": true,
+    // エディタのフォントサイズを12pxに設定します
+    "editor.fontSize": 12,
+    // OSのフォントバリエーション（太さなど）設定をエディタに適用しません
+    "editor.fontVariations": false,
+    // --- 以下はコメントアウトされている（無効な）設定 ---
+    // "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
+    // "editor.cursorSmoothCaretAnimation": true, // カーソルの点滅をアニメーション表示する
+    // "editor.cursorStyle": "block", // カーソルの外観をブロックに変更
+    // GitLens AI機能の「temperature」を0に設定（0は最も決定的・一貫性のある回答を意味します）
+    "gitlens.ai.modelOptions.temperature": 0,
+    // ワークベンチのアクティビティバー（エクスプローラーなどのアイコンが並ぶ場所）を左側ではなく上部に表示します
+    "workbench.activityBar.location": "top",
+    // HTMLタグなどを編集した際、対応する閉じタグも自動的に編集します
+    "editor.linkedEditing": true,
+    // GitLens AI機能で使用するモデルを、VS Code組み込みのAI機能に設定します
+    "gitlens.ai.model": "vscode",
+    // GitLens AIがVS Code経由で使う具体的なモデルとして 'copilot:gpt-4.1' を指定します
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    // ワークベンチ（VS CodeのUI）の配色を個別にカスタマイズします
+    "workbench.colorCustomizations": {
+        // アクティブ（選択中）なタブの下部ボーダーの色を指定します
+        "tab.activeBorder": "#0cf388",
+        // 非アクティブ（選択していない）タブの文字色を半透明の白に設定します
+        "tab.inactiveForeground": "#ffffff80"
+        // --- 以下はコメントアウトされている（無効な）設定 ---
+        // "tab.activeBorder": "#0cf388", // 下部ボーダー
+        // "tab.activeBorderTop": "#0cf388", // 上部ボーダー
+        // "tab.activeBackground": "#0cf38820", // 背景色（薄く）
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "claudeCode.preferredLocation": "panel",
+    // Goのフォーマットツールにgoimportsを指定
+    "go.formatTool": "goimports",
+    // ファイル保存時にフォーマットを実行する（必須）
+    "editor.formatOnSave": true,
+    // [go] 言語固有の設定（念のため）
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    }
+}
