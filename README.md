@@ -15,8 +15,8 @@ brew -v
 
 source ~/.zshrc
 
-### (終わったら)
+### (終わったら)　Brewfileがあるディレクトリで実行
 
-brew bundle
+brew bundle install
 
 ## VSCODDの設定ファイル
